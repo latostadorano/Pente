@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Juega Pente</title>
+    <link rel="shortcut icon" href="pente/imas/vv_blink_16.png" type="image/x-icon"/>
+  </head>
+  <body>
+    
+    <div class="container">
+      <!-- <div>
+        <iframe style="border:none" src="https://editor.p5js.org/latostadorano@gmail.com/embed/kBMYBZv8g" width="1080" height="50"></iframe>
+      </div> -->
+
+      <div class="row">
+        <div class="col-sm-8">
+            <h1>Juega Pente</h1>
+            <br>
+        </div>
+
+        <div class="col-4">
+        </div>
+      </div>
+
+      <div class="row">  
+        <div class="col-sm-8">
+            <h4>OBJETIVO DEL JUEGO:</h4>
+                <div class="alert alert-secondary" role="alert">
+                    Gana colocando <strong>cinco (o más) fichas en una fila, vertical, horizontal o diagonal</strong>, sin espacios entre ellas. O gana <strong>capturando cinco (o más) pares de fichas</strong> de tu oponente.
+                </div>
+        </div> 
+
+        <div class="col-sm-4">
+            <img src="pente/imas/ima_1.png" class="img-fluid" alt="5 in a row">
+            <p>
+              <small>Las negras ganan con cinco seguidas.</small>
+            </p>
+        </div>
+      </div>   
+      <br>
+      <div class="row">  
+          <div class="col-sm-8">
+              
+                <h4>CÓMO JUGAR:</h4> 
+                <p>
+                El juego comienza con el tablero completamente libre de fichas. El primer jugador (negro) comienza el juego jugando una ficha en el punto central del tablero. Posteriormente los jugadores se turnan para colocar sus fichas, una a la vez, en cualquier intersección vacía. Las fichas se colocan en las intersecciones de las líneas (incluido el borde mismo del tablero), en lugar de en los cuadrados. Una vez jugada, una ficha no se puede mover de nuevo, excepto cuando es eliminada por una captura. Los jugadores alternan turnos agregando nuevas fichas al tablero, construyendo sus posiciones, hasta que un jugador gana. </p>
+                <h5>
+                  CAPTURAS:
+                </h5>
+                <div class="alert alert-secondary" role="alert">
+                  Siempre que tu oponente tenga dos fichas (y solo dos) juntas, esas fichas son vulnerables a la captura. La pareja de fichas se puede capturar bloqueando los dos extremos con fichas del contrincante. Las fichas capturadas se eliminan del tablero. <br>
+                  <strong>Las capturas se pueden hacer vertical, horizontal o diagonalmente, y se pueden realizar varias capturas en un solo movimiento.</strong>
+                </div>
+
+          </div>
+  
+          <div class="col-sm-4">
+            <br><br>
+              <img src="pente/imas/ima_2a.png" class="img-fluid" alt="2 fichas juntas">
+              <p>
+                  <small>Para capturar fichas</small> 
+              </p>
+              <img src="pente/imas/ima_2b.png" class="img-fluid" alt="2 fichas siendo atrapadas">
+              <p>
+                  <small>bloquea a tu oponente</small>
+              </p>
+              <img src="pente/imas/ima_2c.png" class="img-fluid" alt="las 2 fichas fueron capturadas">
+              <p>
+                  <small>y captura el par.</small>
+              </p>
+          </div>
+      </div>
+      <br>
+      <div class="row">  
+          <div class="col-sm-8">
+
+                  <h4>GANANDO EL JUEGO:</h4>
+                  El juego termina inmediatamente cuando un jugador captura cinco pares o coloca cinco fichas seguidas. El jugador contrario no tiene "última oportunidad" para hacer un movimiento final.
+                  <br>
+                  <p>Cuando un jugador obtiene una linea sin bloquear de cuatro fichas, llamada <strong>tesela</strong>, la victoria es inminente. Por lo tanto, una fila sin bloquear de tres fichas, llamada <strong>tría</strong>, es una amenaza seria que debe bloquearse a menos que exista un movimiento ofensivo más fuerte. Una linea sin bloquear de tres fichas, si contiene un espacio, todavía se considera una <strong>tría</strong>. </p><br>
+
+                  <h4>ETIQUETA:</h4>
+                  <p>Es detalle habitual, pero no obligatorio, de este juego anunciar "tres" o "tría" cuando se mueve para hacer un tres abierto, y también llamar "cuatro" o "tessera" cuando se hacen cuatro seguidos. Esto es para que el oponente no olvide detener la formación de un cuatro o cinco abiertos, porque no es divertido ganar un juego debido al error del adversario; al menos no debería serlo. La idea es ganar a pesar de que el oponente vea cada amenaza. Señalar el movimiento errante de un jugador también demuestra su propia confianza y dominio del juego.</p><br>
+
+                  <h4>JUGANDO EN LÍNEA EN PENTE NET: </h4>
+                  <p>
+                  Jugamos en <a href="http://pente-online.herokuapp.com" target="_blank">Pente Online</a>. Los partidos son a 2 de 3 juegos.</p><br>
+
+                  <h4>REGLAS DEL TORNEO:</h4>
+                  <p>Como en las reglas estándar, el primer movimiento del primer jugador debe estar en el punto central. Para neutralizar la ventaja que tiene el primer jugador, el segundo movimiento del primer jugador se limita a jugar tres o más intersecciones lejos del centro del tablero. Se aplican todas las demás reglas de Pente estándar.</p><br>
+
+                  <h4>RESPUESTAS A PREGUNTAS COMUNES SOBRE LAS REGLAS DE PENTE:</h4>
+                    <h5>
+                      ¿Seis fichas seguidas también cuentan como una victoria?
+                    </h5>
+                    <p>
+                      Sí, colocar seis o más fichas seguidas gana el juego. Del mismo modo, capturar seis o más pares de fichas de tu oponente gana el juego.
+                    </p><br>
+                    <h5>
+                    	¿Se puede jugar una ficha en el borde del tablero?
+                    </h5>
+                    <p>
+                    	Sí, puedes jugar en el borde de la parrilla.
+                    </p><br>
+
+                    <h5>
+                      ¿Puedo deshacer una fila de 5 capturando una de sus fichas?
+                    </h5>
+                    <p>
+                      No. Cuando un jugador coloca la quinta ficha en una fila, él o ella gana de inmediato. No importa si podría "capturar" el cinco-en-fila ganador, incluso si esa fuera su quinta captura.
+                    </p><br>
+
+                    <h5>
+                      Si formo un par de fichas entre fichas enemigas, ¿se capturan mis fichas?
+                    </h5>
+                    <p>
+                      No, no puedes "capturarte" moviéndote a una posición rodeada. Un par es capturado y eliminado SOLO cuando el oponente juega su pieza en un punto entre corchetes del par. Si juegas la segunda ficha de un par entre las fichas de tu oponente, tu par recién formado permanece en el tablero en una posición muy protegida.
+                    </p><br>
+
+                    <h5>
+                      ¿Debe el primer movimiento estar en el punto central del tablero?
+                    </h5>
+                    <p>
+                    Al seguir las reglas estándar y del torneo, sí. Es costumbre comenzar en el centro para permitir el máximo espacio de juego en todas las direcciones. Sin embargo, si no estás jugando con las reglas estándar o de torneo, la primera pieza se puede colocar en cualquier lugar.
+                    </p> 
+
+                    <a href="http://pente-online.herokuapp.com" target="_blank">¡Vente al pente! \o/</a>
+                    <br> 
+          </div>
+          <br><br>
+          <div class="col-sm-4">
+            <br><br>
+              <img src="pente/imas/ima_3.png" class="img-fluid" alt="Trías y teselas">
+              <p>
+                  <small>El negro ha formado una <strong>tría</strong> horizontal y vertical, mientras que el blanco ha formado una <strong>tesela</strong> y ganará con el siguiente movimiento.</small>
+                                    
+              </p>
+          </div>
+      </div>
+      <br>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+
+
+</html>
